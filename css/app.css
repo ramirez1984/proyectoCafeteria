@@ -1,0 +1,292 @@
+
+:root {
+    --fuenteTitulos: 'Lato', sans-serif;
+    --fuenteTexto: 'Roboto Condensed', sans-serif;
+
+    --primario: #672517;
+    --secundario: #df661d;
+    --blanco: #fff;
+    --negro: #000;
+    --grisOpaco: #bfb2ac;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      font-family: var(--fuenteTexto);
+      font-size: 1.6rem;
+      line-height: 2;
+  }
+
+  /* Estilos globales */
+
+  .contenedor {
+      max-width: 120rem;
+      width: 90%;
+      margin: 0 auto;
+  }
+  a {
+      text-decoration: none;
+  }
+
+  h1, h2, h3, h4 {
+      font-family: var(--fuenteTitulos);
+      
+  }
+
+  h1 {
+      font-size: 4.5rem;
+  }
+  h2 {
+      font-size: 3.5rem;
+  }
+  h3 {
+      font-size: 2.5rem;
+      margin: 0;
+  }
+  h4 {
+     font-size: 2.rem;
+  }
+  img {
+      max-width: 100%;
+  }
+
+  /* Utilidades */
+
+  .no-margin {
+      margin: 0;
+  }
+  .no-padding {
+      padding: 0;
+  }
+  .centrar-texto {
+      text-align: center;
+  }
+ 
+  /* Header */
+
+  .header {
+      background-image: url(../img/banner.jpg);
+      height: 50rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .header__texto {
+      text-align: center;
+      color: var(--blanco);
+      padding: 2rem;
+      line-height: 1.5;
+        
+  }
+
+  @media (min-width: 768px) {
+    .header__texto {
+        padding: 10rem;
+    }
+  }
+
+  .header__barra {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+
+  }
+
+  @media (min-width: 768px) {
+    .header__barra {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+  }
+
+  .header__nombre p {
+        font-size: 5rem;
+        color: var(--blanco);
+        margin: 0;
+        
+  }
+  .header__nombre-span {
+      font-weight: 700;
+  }
+ 
+  .navegacion__enlace {
+      display: block;
+      width: 100%;
+      color: var(--blanco);
+      font-size: 2rem;
+      text-align: center;
+      padding: 0 10rem 0 10rem;
+      transition-property: background-color;
+      transition-duration: .3s;
+  }
+  @media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+        
+    }
+  }
+  
+  .navegacion__enlace:hover {
+      color: var(--negro);
+      background-color: var(--blanco);
+      border-radius: 5px;
+    
+  }
+
+  @media (min-width: 768px) {
+    .navegacion__enlace {
+        display: inline;
+        padding: 0 .5rem 0 .5rem;
+    }
+  }
+  /* Contenido principal */
+
+@media (min-width: 768px) {
+    .contenido_principal {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 2rem;
+    }
+}
+  
+  .blog_entrada {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--grisOpaco);
+}
+.blog_entrada:last-of-type {
+    border-bottom: none;
+}
+@media (min-width: 768px) {
+    .blog__enlace {
+        width: 30%;
+    }
+    
+    
+}
+
+.blog__enlace {
+    display: block;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: .5rem 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: .3s;
+    font-family: var(--fuenteTitulos);
+}
+
+.blog__enlace:hover {
+    background-color: var(--grisOpaco);
+    color: var(--blanco);
+}
+
+/* Aside */
+
+
+.sidebar__curso-nombre {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.sidebar__cursos {
+    list-style: none;
+    padding: 0;
+    
+}
+.sidebar__curso {
+    margin-bottom: 2rem;
+
+}
+.sidebar__precio {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+
+}
+
+.sidebar__span {
+    font-weight: 700;
+}
+
+.sidebar__cupo {
+    margin: 0;
+    text-align: center;
+
+}
+
+.sidebar__enlace {
+    width: 100%;
+    background-color: var(--primario);
+}
+
+@media (min-width: 768px) {
+    .sidebar__curso-nombre,
+    .sidebar__precio,
+    .sidebar__cupo {
+        text-align: left;
+    
+
+    }
+}
+
+
+  /* Footer */
+  .footer {
+      background-image: url(../img/banner.jpg);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      color: var(--blanco);
+      text-align: center;
+      padding: 2rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .footer__barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+    }
+  }
+ 
+  
+  .footer__nombre {
+      font-size: 2rem;
+  }
+  .footer__nombre-span {
+      font-weight: 700;
+  }
+  .footer__navegacion {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+     
+  }
+  .footer__enlace {
+      color: var(--blanco);
+      padding: 0 .5rem 0 .5rem;
+      transition-property: background-color;
+      transition-duration: .5s;
+    
+  }
+  .footer__enlace:hover {
+      background-color: var(--blanco);
+      color: var(--negro);
+
+  }
+
