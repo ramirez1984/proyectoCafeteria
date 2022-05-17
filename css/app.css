@@ -193,6 +193,7 @@ html {
 .blog__enlace:hover {
     background-color: var(--grisOpaco);
     color: var(--blanco);
+    cursor: pointer;;
 }
 
 /* Aside */
@@ -453,4 +454,51 @@ html {
   .entrada__texto {
       text-align: justify;
       font-size: 1.8rem;
+  }
+
+  /* Contacto */
+  
+
+  .contacto__bg {
+      background-image: url(../img/contacto.jpg);
+      height: 40rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+  }
+  .contacto__form {
+      background-color: var(--blanco);
+      margin: -5rem auto 5rem auto;
+      width: 95%;
+      padding: 5rem 5rem 0rem 5rem;
+      border: 1px solid var(--grisOpaco);
+
+  }
+  .form__campo {
+      display: flex;
+      margin-bottom: 2rem;
+  
+
+  }
+  .form__campo:last-of-type {
+      margin-bottom: 0;
+  }
+
+  .form_lebel {
+      flex: 0 0 9rem;
+      font-size: 2rem;
+      text-align: right;
+      margin-right: 2rem;
+     
+
+  }
+  .form__input {
+      flex: 1;
+      border: 2px solid var(--grisOpaco);
+      width: 100%;
+
+  }
+  .form__text {
+      height: 15rem;
+
   }
