@@ -72,6 +72,10 @@ html {
  
   /* Header */
 
+  .webp .header{
+    background-image: url(../img/banner.webp);
+  }
+
   .header {
       background-image: url(../img/banner.jpg);
       height: 50rem;
